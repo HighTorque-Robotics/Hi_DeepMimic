@@ -1,5 +1,6 @@
 # Hi_DeepMimic
-
+native-resource://sdk/image?resource_type=image&key=middle%3Aimg_v3_02nk_32545a8b-48fa-474a-8028-d0afeb2a422g&width=360&height=640&zoom_image=true&gif_optimize=true
+native-resource://sdk/image?resource_type=image&key=middle%3Aimg_v3_02nk_c3feed71-6007-4cf2-9b87-5671986c676g&width=360&height=640&zoom_image=true&gif_optimize=true
 视频流数据 --[gvhmr]--> SMPL运动数据 --[运动学重定向]--> 机器人运动数据 --[mimic训练]--> 运动策略
 
 #安装
