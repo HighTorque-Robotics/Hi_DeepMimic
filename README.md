@@ -12,7 +12,6 @@
 
 （2）根据https://github.com/zju3dv/GVHMR下载相关依赖，数据集训练和评估的数据集不需要下载，Install只用到下方截图这里
 ![341839ed-56eb-400a-8721-449c08494c46](https://github.com/user-attachments/assets/9f7692dd-59dd-414e-afb0-a2a90cf1cd7c)
-![341839ed-56eb-400a-8721-449c08494c46](https://github.com/user-attachments/assets/9f7692dd-59dd-414e-afb0-a2a90cf1cd7c)
 
 （3）对单个视频进行演示：python tools/demo/demo.py --video=docs/example_video/name.mp4 -s
 # 注意：name.mp4可以是自己录制的视频流，需要放在GVHMR/docs/example_video路径下
