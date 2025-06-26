@@ -10,7 +10,7 @@
 安装后将原项目/path/yo/GVHMR/tools/demo路径下的demo.py的内容替换为/path/to/retarget_lab路径下的demo.py的内容
 即可在识别数据时生成对应格式SMPL运动文件
 
-（2）根据https://github.com/zju3dv/GVHMR下载相关依赖，数据集训练和评估的数据集不需要下载，Install只用到下方截图这里
+（2）根据https://github.com/zju3dv/GVHMR 下载相关依赖，数据集训练和评估的数据集不需要下载，Install只用到下方截图这里
 ![341839ed-56eb-400a-8721-449c08494c46](https://github.com/user-attachments/assets/9f7692dd-59dd-414e-afb0-a2a90cf1cd7c)
 
 （3）对单个视频进行演示：python tools/demo/demo.py --video=docs/example_video/name.mp4 -s
