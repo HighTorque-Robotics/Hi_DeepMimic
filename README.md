@@ -14,13 +14,13 @@
 ![341839ed-56eb-400a-8721-449c08494c46](https://github.com/user-attachments/assets/9f7692dd-59dd-414e-afb0-a2a90cf1cd7c)
 
 （3）对单个视频进行演示：python tools/demo/demo.py --video=docs/example_video/name.mp4 -s
-# 注意：name.mp4可以是自己录制的视频流，需要放在GVHMR/docs/example_video路径下
+#### 注意：name.mp4可以是自己录制的视频流，需要放在GVHMR/docs/example_video路径下
 
 # 2. 重定向：retarget_lab安装
 
 ##2.1 环境配置
 
-创建名为retargeting的conda虚拟环境，指定Python版本为3.12：conda create -n retargeting python=3.12    
+创建名为retargeting的conda虚拟环境，指定Python版本为3.12：‘’‘conda create -n retargeting python=3.12  ‘’‘  
 
 激活retargeting环境，后续命令在该环境中执行：conda activate retargeting               
 
