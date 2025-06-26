@@ -21,9 +21,7 @@
 ##2.1 环境配置
 
 创建名为retargeting的conda虚拟环境，指定Python版本为3.12：
-,,,
-conda create -n retargeting python=3.12 
-,,,
+‘ conda create -n retargeting python=3.12 ‘
 
 激活retargeting环境，后续命令在该环境中执行：conda activate retargeting               
 
