@@ -62,7 +62,7 @@ python scripts/retargeting.py
 
 # 3. DeepMimic训练代码：
 
-#### 克隆本仓库，解压Hi_DeepMimic.tar.xz文件，放入主目录下
+#### 克隆本仓库，解压DeepMimic_hi.zip文件，放入主目录下
 
 ### 3.1 安装DeepMimic_hi
 
