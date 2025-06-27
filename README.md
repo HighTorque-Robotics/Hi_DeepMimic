@@ -11,11 +11,11 @@
 即可在识别数据时生成对应格式SMPL运动文件
 
 
-（2）根据https://github.com/zju3dv/GVHMR 下载相关依赖，数据集训练和评估的数据集不需要下载，Install只用到下方截图这里
+（2）根据https://github.com/zju3dv/GVHMR 下载相关依赖，数据集训练和评估的数据集不需要下载
 
 
 （3）对单个视频进行演示：python tools/demo/demo.py --video=docs/example_video/name.mp4 -s
-#### 注意：name.mp4可以是自己录制的视频流，需要放在GVHMR/docs/example_video路径下
+#### 注意：name.mp4可以是自己录制的视频流，需要放在GVHMR/docs/example_video路径下,执行命令后会生成npz文件。
 
 # 2. 重定向：retarget_lab安装
 
@@ -49,13 +49,13 @@ pip install -e pyroki
 
 ##2.2 GVHMR生成SMPL运动数据 (生成pkl文件)
 
-输出SMPL运动文件：
+将生成的npz文件放在data/from_video，在display_amass.py下找到"amass_data = load_amass_data("data/from_video/mgg_walk.npz")"，修改npz文件名为对应的data/from_vide下的文件名，最后执行下方指令，输出SMPL运动文件（pkl文件）：
 ```
 python scripts/display_amass.py
 ```  
 
 ##2.3 生成json文件
-进行运动学重定向：
+按照提示输入pkl文件（刚才的pkl文件名，注意加上后缀），进行运动学重定向，输出json文件（文件名自己命名，注意加上后缀）：
 ```
 python scripts/retargeting.py
 ```  
@@ -79,10 +79,12 @@ pip install -e .
 python mimic_real/scripts/vis_motion.py --task=hi_mimic
 ```
 #### 训练
+在mimic_hi-main/mimic_real/envs/mimic/hi_mimic_config下将self.motion_data.motion_file_path = MOTION_DATA_DIR + "/hi/crawl.json"这一行的"/hi/crawl.json"改为自己的json文件名，并且将json文件放入mimic_hi-main/mimic_real/data/hi目录下,准备就绪后输入下方指令进行训练
 ```
 python mimic_real/scripts/train.py --task=hi_mimic --num_envs=4096 --headless --device=cuda:0
 ```
 #### 评估
+输入下方指令后，会得到onnx文件被放在logs下日期的文件夹里的exported文件夹下
 ```
 python mimic_real/scripts/play.py --task=hi_mimic --num_envs=2 --headless --device=cuda:0
 ```
