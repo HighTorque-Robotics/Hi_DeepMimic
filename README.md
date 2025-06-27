@@ -1,6 +1,5 @@
 
-# Hi_Dee![Uploading sim.gif…]()
-pMimic
+# Hi_DeepMimic
 
 视频流数据 --[gvhmr]--> SMPL运动数据 --[运动学重定向]--> 机器人运动数据 --[mimic训练]--> 运动策略
 
