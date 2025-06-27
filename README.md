@@ -66,7 +66,10 @@ python scripts/retargeting.py
 
 ####获得一个装有isaaclab的环境（本项目使用的isaacsim版本为4.5, isaaclab版本为2.1.0）
 
-####进入DeepMimic_hi目录下pip install -e .
+####进入DeepMimic_hi目录下
+```
+pip install -e .
+```
 
 ### 3.2 使用
 #### 查看轨迹文件正确性
