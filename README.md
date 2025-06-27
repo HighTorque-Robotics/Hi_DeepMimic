@@ -3,7 +3,6 @@
 
 视频流数据 --[gvhmr]--> SMPL运动数据 --[运动学重定向]--> 机器人运动数据 --[mimic训练]--> 运动策略
 
-#安装
 
 # 1. GVHMR安装
 
@@ -25,26 +24,46 @@
 ```
  conda create -n retargeting python=3.12 
 ```
-激活retargeting环境，后续命令在该环境中执行：conda activate retargeting               
+激活retargeting环境，后续命令在该环境中执行：
+```
+conda activate retargeting
+```             
 
-通过requirements.txt文件安装项目依赖包：pip install -r requirements.txt         
+通过requirements.txt文件安装项目依赖包：
+```  
+pip install -r requirements.txt         
+```
 
-以可编辑模式安装smpl_skeleton包：pip install -e smpl_skeleton           
+以可编辑模式安装smpl_skeleton包：
+```  
+pip install -e smpl_skeleton           
+```
 
-以可编辑模式安装pyroki包：pip install -e pyroki                  
+以可编辑模式安装pyroki包：
+```  
+pip install -e pyroki                  
+```
 
 ##2.2 GVHMR生成SMPL运动数据 (生成pkl文件)
 
-输出SMPL运动文件：python scripts/display_amass.py
+输出SMPL运动文件：
+```
+python scripts/display_amass.py
+```  
 
 ##2.3 生成json文件
-进行运动学重定向：python scripts/retargeting.py
+进行运动学重定向：
+```
+python scripts/retargeting.py
+```  
 
 # 3. DeepMimic训练代码：
 
-### 3.1 安装mimic_hi
-1. 获得一个装有isaaclab的环境（本项目使用的isaacsim版本为4.5, isaaclab版本为2.1.0）
-2. pip install -e .
+### 3.1 安装DeepMimic_hi
+
+####获得一个装有isaaclab的环境（本项目使用的isaacsim版本为4.5, isaaclab版本为2.1.0）
+
+####进入DeepMimic_hi目录下pip install -e .
 
 ### 3.2 使用
 #### 查看轨迹文件正确性
