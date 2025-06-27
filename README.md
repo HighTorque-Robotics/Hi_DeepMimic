@@ -1,5 +1,6 @@
-！ /home/sunteng/Downloads/飞书20250626-140602.gif
-# Hi_DeepMimic
+
+# Hi_Dee![Uploading sim.gif…]()
+pMimic
 
 视频流数据 --[gvhmr]--> SMPL运动数据 --[运动学重定向]--> 机器人运动数据 --[mimic训练]--> 运动策略
 
