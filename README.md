@@ -79,7 +79,7 @@ pip install -e .
 python mimic_real/scripts/vis_motion.py --task=hi_mimic
 ```
 #### 训练
-在mimic_hi-main/mimic_real/envs/mimic/hi_mimic_config下将self.motion_data.motion_file_path = MOTION_DATA_DIR + "/hi/crawl.json"这一行的"/hi/crawl.json"改为自己的json文件名，并且将json文件放入mimic_hi-main/mimic_real/data/hi目录下,准备就绪后输入下方指令进行训练
+在DeepMimic_hi/mimic_real/envs/mimic/hi_mimic_config下将self.motion_data.motion_file_path = MOTION_DATA_DIR + "/hi/crawl.json"这一行的"/hi/crawl.json"改为自己的json文件名，并且将json文件放入DeepMimic_hi/mimic_real/data/hi目录下,准备就绪后输入下方指令进行训练
 ```
 python mimic_real/scripts/train.py --task=hi_mimic --num_envs=4096 --headless --device=cuda:0
 ```
