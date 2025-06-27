@@ -18,7 +18,9 @@
 
 # 2. 重定向：retarget_lab安装
 
-##2.1 环境配置
+## 2.1 环境配置
+
+#### 克隆本仓库，解压retarget_lab.zip文件，放入主目录下
 
 创建名为retargeting的conda虚拟环境，指定Python版本为3.12：
 ```
@@ -58,6 +60,8 @@ python scripts/retargeting.py
 ```  
 
 # 3. DeepMimic训练代码：
+
+#### 克隆本仓库，解压Hi_DeepMimic.tar.xz文件，放入主目录下
 
 ### 3.1 安装DeepMimic_hi
 
