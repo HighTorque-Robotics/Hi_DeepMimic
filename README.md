@@ -1,5 +1,5 @@
 ![push](https://github.com/HighTorque-Robotics/Hi_DeepMimic/blob/main/%E9%A3%9E%E4%B9%A620250626-141905.gif)
-
+![power](https://github.com/HighTorque-Robotics/Hi_DeepMimic/blob/main/%E9%A3%9E%E4%B9%A620250630-142138.gif)
 # Hi_DeepMimic
 
 视频流数据 --[gvhmr]--> SMPL运动数据 --[运动学重定向]--> 机器人运动数据 --[mimic训练]--> 运动策略
