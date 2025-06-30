@@ -55,7 +55,7 @@ pip install -e pyroki
 python scripts/display_amass.py
 ```  
 
-## 2.3 生成json文件
+## 2.2 生成json文件
 按照提示输入pkl文件（刚才的pkl文件名，注意加上后缀），进行运动学重定向，输出json文件（文件名自己命名，注意加上后缀）：
 ```
 python scripts/retargeting.py
