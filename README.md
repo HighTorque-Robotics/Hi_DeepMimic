@@ -48,14 +48,14 @@ pip install -e smpl_skeleton
 pip install -e pyroki                  
 ```
 
-##2.2 GVHMR生成SMPL运动数据 (生成pkl文件)
+## 2.2 GVHMR生成SMPL运动数据 (生成pkl文件)
 
 将生成的npz文件放在data/from_video，在display_amass.py下找到"amass_data = load_amass_data("data/from_video/mgg_walk.npz")"，修改npz文件名为对应的data/from_vide下的文件名，最后执行下方指令，输出SMPL运动文件（pkl文件）：
 ```
 python scripts/display_amass.py
 ```  
 
-## 2.2 生成json文件
+## 2.3 生成json文件
 按照提示输入pkl文件（刚才的pkl文件名，注意加上后缀），进行运动学重定向，输出json文件（文件名自己命名，注意加上后缀）：
 ```
 python scripts/retargeting.py
