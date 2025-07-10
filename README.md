@@ -1,25 +1,12 @@
-![power](https://github.com/HighTorque-Robotics/Hi_DeepMimic/blob/main/%E9%A3%9E%E4%B9%A620250630-142138.gif)
 # Hi_DeepMimic
 
-视频流数据 --[gvhmr]--> SMPL运动数据 --[运动学重定向]--> 机器人运动数据 --[mimic训练]--> 运动策略
+![power](https://github.com/HighTorque-Robotics/Hi_DeepMimic/blob/main/%E9%A3%9E%E4%B9%A620250630-142138.gif)
 
+## 流程：SMPL运动数据 --[运动学重定向]--> 机器人运动数据 --[mimic训练]--> 运动策略
 
-# 1. GVHMR安装
+# 1. 重定向：retarget_lab安装
 
-（1）下载链接：https://github.com/zju3dv/GVHMR
-安装后将原项目/path/yo/GVHMR/tools/demo路径下的demo.py的内容替换为/path/to/retarget_lab路径下的demo.py的内容
-即可在识别数据时生成对应格式SMPL运动文件
-
-
-（2）根据https://github.com/zju3dv/GVHMR 下载相关依赖，数据集训练和评估的数据集不需要下载
-
-
-（3）对单个视频进行演示：python tools/demo/demo.py --video=docs/example_video/name.mp4 -s
-#### 注意：name.mp4可以是自己录制的视频流，需要放在GVHMR/docs/example_video路径下,执行命令后会生成npz文件。
-
-# 2. 重定向：retarget_lab安装
-
-## 2.1 环境配置
+## 1.1 环境配置
 
 #### 克隆本仓库，解压retarget_lab.zip文件，放入主目录下
 
@@ -49,7 +36,11 @@ pip install -e pyroki
 
 ## 2.2 GVHMR生成SMPL运动数据 (生成pkl文件)
 
-将生成的npz文件放在data/from_video，在display_amass.py下找到"amass_data = load_amass_data("data/from_video/mgg_walk.npz")"，修改npz文件名为对应的data/from_vide下的文件名，最后执行下方指令，输出SMPL运动文件（pkl文件）：
+找到retarget_lab/data/from_video路径下的npz文件，在display_amass.py下找到
+```
+amass_data = load_amass_data("data/from_video/mgg_walk.npz")
+```
+修改npz文件名为对应的data/from_vide下的文件名，最后执行下方指令，输出SMPL运动文件（pkl文件）：
 ```
 python scripts/display_amass.py
 ```  
@@ -80,6 +71,7 @@ pip install -e .
 python mimic_real/scripts/vis_motion.py --task=hi_mimic
 ```
 ![vis_motion](https://github.com/HighTorque-Robotics/Hi_DeepMimic/blob/main/%E9%A3%9E%E4%B9%A620250710-101616.gif)
+
 #### 训练
 在DeepMimic_hi/mimic_real/envs/mimic/hi_mimic_config下将self.motion_data.motion_file_path = MOTION_DATA_DIR + "/hi/crawl.json"这一行的"/hi/crawl.json"更换为自己的json文件名，并且将json文件放入DeepMimic_hi/mimic_real/data/hi目录下,准备就绪后输入下方指令进行训练
 ```
