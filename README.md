@@ -1,4 +1,3 @@
-![push](https://github.com/HighTorque-Robotics/Hi_DeepMimic/blob/main/%E9%A3%9E%E4%B9%A620250626-141905.gif)
 ![power](https://github.com/HighTorque-Robotics/Hi_DeepMimic/blob/main/%E9%A3%9E%E4%B9%A620250630-142138.gif)
 # Hi_DeepMimic
 
