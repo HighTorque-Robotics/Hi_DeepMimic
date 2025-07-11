@@ -1,6 +1,6 @@
 # Hi_DeepMimic
 
-![power](https://github.com/HighTorque-Robotics/Hi_DeepMimic/blob/main/%E9%A3%9E%E4%B9%A620250630-142138.gif)
+![power](https://github.com/HighTorque-Robotics/Hi_DeepMimic/blob/main/%E9%A3%9E%E4%B9%A620250711-153009.gif)
 
 ## 流程：SMPL运动数据 --[运动学重定向]--> 机器人运动数据 --[mimic训练]--> 运动策略
 
