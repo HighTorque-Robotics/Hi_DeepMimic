@@ -1,0 +1,1 @@
+from mimic_real.assets.usd.high_torque.high_torque import *
