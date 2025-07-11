@@ -8,7 +8,7 @@
 
 ### 1.1 环境配置
 
-#### 克隆本仓库，解压retarget_lab.zip文件，放入主目录下
+#### 克隆本仓库，在retarget_lab文件夹下打开终端
 
 创建名为retargeting的conda虚拟环境，指定Python版本为3.12：
 ```
@@ -53,7 +53,7 @@ python scripts/retargeting.py
 
 ## 2. DeepMimic训练代码：
 
-#### 克隆本仓库，解压DeepMimic_hi.zip文件，放入主目录下
+#### 克隆本仓库，在DeepMimic_hi文件夹下打开终端
 
 ### 2.1 安装DeepMimic_hi
 
@@ -73,12 +73,13 @@ python mimic_real/scripts/vis_motion.py --task=hi_mimic
 #### 2.3 训练
 在DeepMimic_hi/mimic_real/envs/mimic路径下的hi_mimic_config.py中找到这一行
 ```
-self.motion_data.motion_file_path = MOTION_DATA_DIR + "/hi/crawl.json
+self.motion_data.motion_file_path = MOTION_DATA_DIR + "/hi/waving.json
 ```
-将这一行的"/hi/crawl.json"更换为自己的json文件名，并且将json文件放入DeepMimic_hi/mimic_real/data/hi目录下,准备就绪后输入下方指令进行训练
+并且检查json文件已放入DeepMimic_hi/mimic_real/data/hi目录下,准备就绪后输入下方指令进行训练
 ```
 python mimic_real/scripts/train.py --task=hi_mimic --num_envs=4096 --headless --device=cuda:0
 ```
+在训练过程中建议
 #### 2.4 评估
 输入下方指令后，会得到onnx文件被放在logs下日期的文件夹里的exported文件夹下
 ```
