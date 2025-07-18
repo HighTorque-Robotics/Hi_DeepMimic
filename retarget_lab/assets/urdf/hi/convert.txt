@@ -1,0 +1,6 @@
+python scripts/tools/convert_urdf.py \
+  /home/sunteng/lab_ws/mimic_real/mimic_real/assets/urdf/hi/urdf/hi_23dof_250401_rl.urdf \
+  /home/sunteng/lab_ws/mimic_real/mimic_real/assets/usd/high_torque/hi/hi.usd \
+  --joint-stiffness 0.0 \
+  --joint-damping 0.0 \
+  --joint-target-type none

@@ -1,0 +1,9 @@
+setup.py
+smpl_skeleton/__init__.py
+smpl_skeleton/body_models.py
+smpl_skeleton/lbs.py
+smpl_skeleton/smpl_wrapper.py
+smpl_skeleton.egg-info/PKG-INFO
+smpl_skeleton.egg-info/SOURCES.txt
+smpl_skeleton.egg-info/dependency_links.txt
+smpl_skeleton.egg-info/top_level.txt
