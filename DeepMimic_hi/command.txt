@@ -1,3 +1,0 @@
-python mimic_real/scripts/train.py --task=hi_clean --num_envs=4096 --device=cuda:0 --headless
-python mimic_real/scripts/play.py --task=hi_clean --num_envs=2 --device=cuda:0
-python mimic_real/scripts/train.py --task=hi_mimic --num_envs=4096 --device=cuda:0 --headless
