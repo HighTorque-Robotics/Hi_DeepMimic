@@ -1,0 +1,56 @@
+logs/
+
+# Python gitignore
+
+# 虚拟环境
+venv/
+env/
+.venv/
+pipenv/
+__pypackages__/
+
+# 编译文件
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.egg-info/
+
+# 日志和数据库
+*.log
+*.sqlite
+*.db
+
+# 配置文件（可根据需要调整）
+.env
+.venv/
+secrets.json
+
+# 打包文件
+dist/
+build/
+*.egg-info/
+*.whl
+*.tar.gz
+
+# 编辑器/IDE 特定文件
+.idea/
+.vscode/
+*.iml
+*.sublime-workspace
+*.sublime-project
+
+# 操作系统特定文件
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Jupyter Notebook 特定文件
+.ipynb_checkpoints/
+*.ipynb.backup
+
+# 临时文件
+*.bak
+*.swp
+*.tmp

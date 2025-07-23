@@ -1,0 +1,83 @@
+digraph G {
+node [shape=box];
+"waist_link" [label="waist_link"];
+"l_hip_pitch_link" [label="l_hip_pitch_link"];
+"l_hip_roll_link" [label="l_hip_roll_link"];
+"l_thigh_link" [label="l_thigh_link"];
+"l_calf_link" [label="l_calf_link"];
+"l_ankle_pitch_link" [label="l_ankle_pitch_link"];
+"l_ankle_roll_link" [label="l_ankle_roll_link"];
+"r_hip_pitch_link" [label="r_hip_pitch_link"];
+"r_hip_roll_link" [label="r_hip_roll_link"];
+"r_thigh_link" [label="r_thigh_link"];
+"r_calf_link" [label="r_calf_link"];
+"r_ankle_pitch_link" [label="r_ankle_pitch_link"];
+"r_ankle_roll_link" [label="r_ankle_roll_link"];
+"base_link" [label="base_link"];
+"head_link" [label="head_link"];
+"l_shoulder_pitch_link" [label="l_shoulder_pitch_link"];
+"l_shoulder_roll_link" [label="l_shoulder_roll_link"];
+"l_upper_arm_link" [label="l_upper_arm_link"];
+"l_elbow_link" [label="l_elbow_link"];
+"l_wrist_link" [label="l_wrist_link"];
+"left_hand_link" [label="left_hand_link"];
+"r_shoulder_pitch_link" [label="r_shoulder_pitch_link"];
+"r_shoulder_roll_link" [label="r_shoulder_roll_link"];
+"r_upper_arm_link" [label="r_upper_arm_link"];
+"r_elbow_link" [label="r_elbow_link"];
+"r_wrist_link" [label="r_wrist_link"];
+"right_hand_link" [label="right_hand_link"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"waist_link" -> "l_hip_pitch_joint" [label="xyz: 0 0.0575 -0.0553 \nrpy: 0 -0 0"]
+"l_hip_pitch_joint" -> "l_hip_pitch_link"
+"l_hip_pitch_link" -> "l_hip_roll_joint" [label="xyz: 0.02725 0.042 0 \nrpy: 0 -0 0"]
+"l_hip_roll_joint" -> "l_hip_roll_link"
+"l_hip_roll_link" -> "l_thigh_joint" [label="xyz: -0.02725 0 -0.123 \nrpy: 0 -0 0"]
+"l_thigh_joint" -> "l_thigh_link"
+"l_thigh_link" -> "l_calf_joint" [label="xyz: 0 0.00375 -0.069 \nrpy: 0 -0 0"]
+"l_calf_joint" -> "l_calf_link"
+"l_calf_link" -> "l_ankle_pitch_joint" [label="xyz: 0 0.00475 -0.2 \nrpy: 0 -0 0"]
+"l_ankle_pitch_joint" -> "l_ankle_pitch_link"
+"l_ankle_pitch_link" -> "l_ankle_roll_joint" [label="xyz: 0.015125 -0.0085 0 \nrpy: 0 -0 0"]
+"l_ankle_roll_joint" -> "l_ankle_roll_link"
+"waist_link" -> "r_hip_pitch_joint" [label="xyz: 0 -0.0575 -0.0553 \nrpy: 0 -0 0"]
+"r_hip_pitch_joint" -> "r_hip_pitch_link"
+"r_hip_pitch_link" -> "r_hip_roll_joint" [label="xyz: 0.02725 -0.042 0 \nrpy: 0 -0 0"]
+"r_hip_roll_joint" -> "r_hip_roll_link"
+"r_hip_roll_link" -> "r_thigh_joint" [label="xyz: -0.02725 0 -0.123 \nrpy: 0 -0 0"]
+"r_thigh_joint" -> "r_thigh_link"
+"r_thigh_link" -> "r_calf_joint" [label="xyz: 0 -0.00375 -0.069 \nrpy: 0 -0 0"]
+"r_calf_joint" -> "r_calf_link"
+"r_calf_link" -> "r_ankle_pitch_joint" [label="xyz: 0 -0.00475 -0.2 \nrpy: 0 -0 0"]
+"r_ankle_pitch_joint" -> "r_ankle_pitch_link"
+"r_ankle_pitch_link" -> "r_ankle_roll_joint" [label="xyz: 0.015125 0.0085 0 \nrpy: 0 -0 0"]
+"r_ankle_roll_joint" -> "r_ankle_roll_link"
+"waist_link" -> "waist_joint" [label="xyz: -0.028589 0.0015934 0.2183 \nrpy: 0 -0 0"]
+"waist_joint" -> "base_link"
+"base_link" -> "head_fixed_joint" [label="xyz: 0 0 0.1 \nrpy: 0 -0 0"]
+"head_fixed_joint" -> "head_link"
+"base_link" -> "l_shoulder_pitch_joint" [label="xyz: 0.028589 0.11796 0.0077 \nrpy: 0 -0 0"]
+"l_shoulder_pitch_joint" -> "l_shoulder_pitch_link"
+"l_shoulder_pitch_link" -> "l_shoulder_roll_joint" [label="xyz: 0.02325 0.04 0 \nrpy: 0 -0 0"]
+"l_shoulder_roll_joint" -> "l_shoulder_roll_link"
+"l_shoulder_roll_link" -> "l_upper_arm_joint" [label="xyz: -0.023 0 -0.0935 \nrpy: 0 -0 1.57075"]
+"l_upper_arm_joint" -> "l_upper_arm_link"
+"l_upper_arm_link" -> "l_elbow_joint" [label="xyz: -0.0005 0 -0.034 \nrpy: 0 -0 0"]
+"l_elbow_joint" -> "l_elbow_link"
+"l_elbow_link" -> "l_wrist_joint" [label="xyz: 0.00075 0 -0.0935 \nrpy: 0 -0 0"]
+"l_wrist_joint" -> "l_wrist_link"
+"l_wrist_link" -> "left_hand_fixed_joint" [label="xyz: 0 0 -0.05 \nrpy: 0 -0 0"]
+"left_hand_fixed_joint" -> "left_hand_link"
+"base_link" -> "r_shoulder_pitch_joint" [label="xyz: 0.028589 -0.12114 0.0077 \nrpy: 0 -0 0"]
+"r_shoulder_pitch_joint" -> "r_shoulder_pitch_link"
+"r_shoulder_pitch_link" -> "r_shoulder_roll_joint" [label="xyz: 0.02325 -0.04 0 \nrpy: 0 -0 0"]
+"r_shoulder_roll_joint" -> "r_shoulder_roll_link"
+"r_shoulder_roll_link" -> "r_upper_arm_joint" [label="xyz: -0.023 0 -0.0935 \nrpy: 0 -0 1.57075"]
+"r_upper_arm_joint" -> "r_upper_arm_link"
+"r_upper_arm_link" -> "r_elbow_joint" [label="xyz: -0.0005 0 -0.034 \nrpy: 0 -0 0"]
+"r_elbow_joint" -> "r_elbow_link"
+"r_elbow_link" -> "r_wrist_joint" [label="xyz: 0.00075 0 -0.0935 \nrpy: 0 -0 0"]
+"r_wrist_joint" -> "r_wrist_link"
+"r_wrist_link" -> "right_hand_fixed_joint" [label="xyz: 0 0 -0.05 \nrpy: 0 -0 0"]
+"right_hand_fixed_joint" -> "right_hand_link"
+}
