@@ -38,7 +38,7 @@ pip install -e pyroki
 
 找到retarget_lab/data/from_video路径下的npz文件，在display_amass.py下找到这一行
 ```
-amass_data = load_amass_data("data/from_video/waving.npz")
+amass_data = load_amass_data("data/from_video/crawl.npz")
 ```
 修改npz文件名为对应的data/from_vide下的文件名，最后执行下方指令，输出SMPL运动文件（pkl格式）：
 ```
@@ -73,7 +73,7 @@ python mimic_real/scripts/vis_motion.py --task=hi_mimic
 #### 2.3 训练
 在DeepMimic_hi/mimic_real/envs/mimic路径下的hi_mimic_config.py中找到这一行
 ```
-self.motion_data.motion_file_path = MOTION_DATA_DIR + "/hi/waving.json
+self.motion_data.motion_file_path = MOTION_DATA_DIR + "/hi/crawl.json"
 ```
 并且检查json文件已放入DeepMimic_hi/mimic_real/data/hi目录下,准备就绪后输入下方指令进行训练
 ```
